@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
+   <title>The way - A página que guia você</title>
+  
+  <!-- Importação do CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/animate.min.css" rel="stylesheet">
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/css/lightbox.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link id="css-preset" href="assets/css/presets/preset1.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/estilotw.css">
+  <link rel="shortcut icon" href="assets/images/logo.png">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+
+ 
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+
+</head><!--/head(Cabeça)-->
+<body>
+
+  <!--.Pré-carregador-->
+  <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
+  <!--/.Pré-carregador-->
+
+  <!-- Carrosel -->
+  <header id="home">
+    <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item active" style="background-image: url(assets/images/slider/1.jpg)">
+          <div class="caption">
+            <h1 class="animated fadeInLeftBig">Bem vindo a <span>The way</span></h1>
+            <p class="animated fadeInRightBig">Cadastre sua transportadora ou seu caminhão</p>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="app/view/menuDeCadastros.html">Cadastre-se</a>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(assets/images/slider/2.jpg)">
+          <div class="caption">
+            <h1 class="animated fadeInLeftBig">Bem vindo a <span>The way</span></h1>
+            <p class="animated fadeInRightBig">Melhore o seu desenpenho com nosso site</p>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Comece agora</a>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(assets/images/slider/3.jpg)">
+          <div class="caption">
+            <h1 class="animated fadeInLeftBig">Nós estamos <span>na Estrada com você</span></h1>
+            <p class="animated fadeInRightBig">Já dirige? Entre no The Way, e começe novas viagens agora!</p>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="app/view/loginT.html">Entrar</a>
+          </div>
+        </div>
+      </div>
+      <a class="left-control" href="#home-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+      <a class="right-control" href="#home-slider" data-slide="next"><i class="fa fa-angle-right"></i></a>
+
+      <a id="tohash" href="#services"><i class="fa fa-angle-down"></i></a>
+      <!-- /Carrosel -->
+
+    </div><!--/#Controle deslizante doméstico-->
+    <div class="main-nav">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Alternar de navegação</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <h1><img class="img-responsive" src="assets/images/T.png" alt="logo"></h1>
+          </a>                    
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">                 
+            <li class="scroll active"><a href="#home">         Home      </a></li>
+            <li class="scroll"><a href="#services">            Serviços  </a></li> 
+            <li class="scroll"><a href="#about-us">            Sobre nós </a></li>                     
+            <li class="scroll"><a href="#team">                Equipe    </a></li>
+            <li class="scroll"><a href="#contact">             Contato   </a></li>
+            <li class="scroll"><a href="app/view/ajuda.html">  Ajuda     </a></li>
+            <li class="scroll"><a href="app/view/loginT.html"> Entrar    </a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!--/#Navegação principal(menu principal)-->
+  </header><!--/#home-->
+  <section id="services">
+    <div class="container">
+      <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <div class="row">
+          <div class="text-center col-sm-8 col-sm-offset-2">
+            <h2>Nossos serviços</h2>            
+          </div>
+        </div> 
+      </div>
+      <div class="text-center our-services">
+        <div class="row">
+          <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <div class="service-icon">
+              <i class="fa fa-cog" aria-hidden="true"></i>
+
+            </div>
+            <div class="service-info">
+              <h3>Identidade da marca</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="450ms">
+            <div class="service-icon">
+              <i class="fa fa-umbrella"></i>
+            </div>
+            <div class="service-info">
+              <h3>Ideia criativa</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="550ms">
+            <div class="service-icon">
+              <i class="fa fa-cloud"></i>
+            </div>
+            <div class="service-info">
+              <h3>Suporte impressionante</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="650ms">
+            <div class="service-icon">
+              <i class="fa fa-coffee"></i>
+            </div>
+            <div class="service-info">
+              <h3>Design profissional</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="750ms">
+            <div class="service-icon">
+              <i class="fa fa-bitbucket"></i>
+            </div>
+            <div class="service-info">
+              <h3>Desenvolvimento de aplicativos</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="850ms">
+            <div class="service-icon">
+              <i class="fa fa-gift"></i>
+            </div>
+            <div class="service-info">
+              <h3>Código limpo</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!--/#Serviços-->
+  <section id="about-us" class="parallax">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="about-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <h2>Sobre nós</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.Ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="our-skills wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+              <p class="lead">Experiências</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="95">95%</div>
+              </div>
+            </div>
+            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="400ms">
+              <p class="lead">Designer de Web</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="75">75%</div>
+              </div>
+            </div>
+            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
+              <p class="lead">Programação</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="60">60%</div>
+              </div>
+            </div>
+            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+              <p class="lead">Diversão</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="85">85%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--/#sobre nós-->
+  <section id="team">
+    <div class="container">
+      <div class="row">
+        <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
+          <h2>A equipe</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
+        </div>
+      </div>
+      <div class="team-members">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
+              <div class="member-image">
+                <img class="img-responsive" src="assets/images/team/Bruno Pinheiro.jpg" alt="">
+              </div>
+              <div class="member-info">
+                <h3>Bruno Pinheiro</h3>
+                <h4>Desenvolvedor</h4>
+                <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+              </div>
+              <div class="social-icons">
+                <ul>
+                  <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="500ms">
+              <div class="member-image">
+                <img class="img-responsive" src="assets/images/team/Mayke Brayan.jpg" alt="">
+              </div>
+              <div class="member-info">
+                <h3>Myake Brayan </h3>
+                <h4>UI/UX Designer</h4>
+                <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+              </div>
+              <div class="social-icons">
+                <ul>
+                  <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="800ms">
+              <div class="member-image">
+                <img class="img-responsive" src="assets/images/team/Vitor Vieira.jpg" alt="">
+              </div>
+              <div class="member-info">
+                <h3>Vitor Vieira</h3>
+                <h4>Diretor Executivo e Fundador</h4>
+                <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+              </div>
+              <div class="social-icons">
+                <ul>
+                  <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>            
+    </div>
+  </section>
+
+  <!--/#Equipe-->
+  <section id="features" class="parallax">
+    <div class="container">
+      <div class="row count">
+        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <i class="fa fa-user"></i>
+          <h3 class="timer">4000</h3>
+          <p>Clientes felizes</p>
+        </div>
+        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+          <i class="fa fa-desktop"></i>
+          <h3 class="timer">200</h3>                    
+          <p>Sites modernos</p>
+        </div> 
+        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="700ms">
+          <i class="fa fa-trophy"></i>
+          <h3 class="timer">10</h3>                    
+          <p>PRÊMIOS GANHANTES</p>
+        </div> 
+        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="900ms">
+          <i class="fa fa-comment-o"></i>                    
+          <h3>24/7</h3>
+          <p>Suporte rápido</p>
+        </div>                 
+      </div>
+    </div>
+  </section>
+
+  <!--/#Características-->
+  <section id="pricing">
+    <div class="container">
+      <div class="row">
+        <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
+          <h2>Tabela de preços</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
+        </div>
+      </div>
+      <div class="pricing-table">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="single-table wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
+              <h3>Basico</h3>
+              <div class="price">
+                $9<span>/Mês</span>                          
+              </div>
+              <ul>
+                <li>Configuração gratuita</li>
+                <li>10GB Armazenamento</li>
+                <li>100GB Largura de Banda</li>
+                <li>5 Produtos</li>
+              </ul>
+              <a href="#" class="btn btn-lg btn-primary">Inscrever-se</a>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="single-table wow flipInY" data-wow-duration="1000ms" data-wow-delay="500ms">
+              <h3>Padrão</h3>
+              <div class="price">
+                $19<span>/Mês</span>                                
+              </div>
+              <ul>
+                <li>Configuração gratuita</li>
+                <li>10GB Armazenamento</li>
+                <li>100GB Largura de Banda</li>
+                <li>5 Produtos</li>
+              </ul>
+              <a href="#" class="btn btn-lg btn-primary">Inscrever-se</a>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="single-table featured wow flipInY" data-wow-duration="1000ms" data-wow-delay="800ms">
+              <h3>Destaque</h3>
+              <div class="price">
+                $29<span>/Mês</span>                                
+              </div>
+              <ul>
+                <li>Configuração gratuita</li>
+                <li>10GB Armazenamento</li>
+                <li>100GB Largura de Banda</li>
+                <li>5 Produtos</li>
+              </ul>
+              <a href="#" class="btn btn-lg btn-primary">Inscrever-se</a>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="single-table wow flipInY" data-wow-duration="1000ms" data-wow-delay="1100ms">
+              <h3>Profissional</h3>
+              <div class="price">
+                $49<span>/Mês</span>                    
+              </div>
+              <ul>
+                <li>Configuração gratuita</li>
+                <li>10GB Armazenamento</li>
+                <li>100GB Largura de Banda</li>
+                <li>5 Produtos</li>
+              </ul>
+              <a href="#" class="btn btn-lg btn-primary">Inscrever-se</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--/#Preço-->
+  <section id="twitter" class="parallax">
+    <div>
+      <a class="twitter-left-control" href="#twitter-carousel" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+      <a class="twitter-right-control" href="#twitter-carousel" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <div class="twitter-icon text-center">
+              <i class="fa fa-twitter"></i>
+              <h4> Depoimentos </h4>
+            </div>
+            <div id="twitter-carousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="item active wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                  <p>Introduzindo o gerador Shortcode para modelos baseados em Helix V2 <a href="#"><span>#helixframework #joomla</span> http://bit.ly/1qlgwav</a></p>
+                </div>
+                <div class="item">
+                  <p>Introduzindo o gerador Shortcode para modelos baseados em Helix V2 <a href="#"><span>#helixframework #joomla</span> http://bit.ly/1qlgwav</a></p>
+                </div>
+                <div class="item">                                
+                  <p>Introduzindo o gerador Shortcode para modelos baseados em Helix V2 <a href="#"><span>#helixframework #joomla</span> http://bit.ly/1qlgwav</a></p>
+                </div>
+              </div>                        
+            </div>                    
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--/#twitter-->
+  <!-- Form contato -->
+  <section id="contact">
+    <div id="contact-us" class="parallax">
+      <div class="container">
+        <div class="row">
+          <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <h2>Contate-Nos</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
+          </div>
+        </div>
+        <div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+          <div class="row">
+            <div class="col-sm-6">
+              <form id="main-contact-form" name="contact-form" method="post" action="#">
+                <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input type="text" name="name" class="form-control" placeholder="Nome" required="required">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input type="email" name="email" class="form-control" placeholder="E-mail" required="required">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" name="subject" class="form-control" placeholder="Sujeito" required="required">
+                </div>
+                <div class="form-group">
+                  <textarea name="message" id="message" class="form-control" rows="4" placeholder="Digite sua mensagem" required="required"></textarea>
+                </div>                        
+                <div class="form-group">
+                  <button type="submit" class="btn-submit"> Envie agora </button>
+                </div>
+              </form>   
+            </div>
+            <div class="col-sm-6">
+             <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+
+                 <ul class="address">
+                 <li><i class="fa fa-map-marker"> </i> <span> Endereço: </span>              2400 South Avenue A     </li>
+                 <li><i class="fa fa-phone">      </i> <span> Telefone: </span>              +55 (47) 99725-7995     </li>
+                 <li><i class="fa fa-envelope">   </i> <span> Email:    </span> <a href="#"> suporte@TheWay.com  </a></li>
+                 <li><i class="fa fa-globe">      </i> <span> Website:  </span> <a href="#"> www.sitename.com    </a></li>
+               </ul>
+              </div>                            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>        
+  </section>
+
+  <!--/#contato-->
+  <footer id="footer">
+    <div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+      <div class="container text-center">
+        <div class="footer-logo">
+          <a href="index.html"><img class="img-responsive" src="assets/images/logo.png" alt=""></a>
+        </div>
+        <div class="social-icons">
+          <ul>
+            <li><a class="twitter"  href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="tumblr"   href="#"><i class="fa fa-tumblr"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <p>&copy; 2017 The way.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="assets/js/jquery.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.inview.min.js"></script>
+  <script type="text/javascript" src="assets/js/wow.min.js"></script>
+  <script type="text/javascript" src="assets/js/mousescroll.js"></script>
+  <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.countTo.js"></script>
+  <script type="text/javascript" src="assets/js/lightbox.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+</html>

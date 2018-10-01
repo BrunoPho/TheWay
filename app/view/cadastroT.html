@@ -1,0 +1,226 @@
+<?php
+
+require_once "../models/conexao.php";
+
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title> Cadastre-se - Encontre a transportadora mais ideal a você </title>
+
+    <!-- Importação do CSS -->
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/css/animate.min.css" rel="stylesheet">
+    <link href="../../assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../assets/css/lightbox.css" rel="stylesheet">
+    <link href="../../assets/css/main.css" rel="stylesheet">
+    <link id="css-preset" href="../../assets/css/presets/preset1.css" rel="stylesheet">
+    <link href="../../assets/css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/estilotw.css">
+    <link rel="shortcut icon" href="../../assets/images/logo.png">
+    <link href="http://cdn.phpoll.com/css/animate.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Importação do JS -->
+    <script src="https:../../ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https:../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/html5shiv.js"></script>
+    <script src="../../assets/js/respond.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.js"></script>
+    <script type="text/javascript" src="../../assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.inview.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/wow.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/mousescroll.js"></script>
+    <script type="text/javascript" src="../../assets/js/smoothscroll.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.countTo.js"></script>
+    <script type="text/javascript" src="../../assets/js/lightbox.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/html5shiv.js"></script>
+    <script src="../../assets/js/respond.min.js"></script>
+
+</head>
+<body>
+
+<div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
+<!--/.Pré-carregador-->
+
+<header id=" Home ">
+
+    <!--/#Controle deslizante doméstico-->
+    <div class="main-nav">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only"> Alternar de navegação </span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">
+                    <h1><img class="img-responsive" src="../../assets/images/T.png" alt="logo"></h1>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="scroll"><a href="ajuda.html">       Ajuda        </a></li>
+                    <li class="scroll"><a href="../../index.html"> Sair         </a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div><!--/#Navegação principal(menu principal)-->
+</header><!--/# Home -->
+
+<!-- Nome do formulario -->
+<center><h1> Vamos começar: </h1></center>
+
+<form class="form-horizontal" method="POST" action="../controls/ControladorTransportadora.php?acao=cadastrar_transportadora"><!-- Form - Inicio do formulario -->
+    <fieldset><!-- conjunto de campos -->
+
+        <!-- Text input (Nome)-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="nome"></label>
+            <div class="col-md-4">
+                <input id="nome" name="nome" type="text" placeholder="Nome" class="form-control input-md" required="" title="Preencha com seu primeiro">
+            </div>
+        </div>
+
+        <!-- Text input (Email)-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="email"></label>
+            <div class="col-md-4">
+                <input id="email" name="email" type="email" placeholder="E-mail" class="form-control input-md" required="" title="Preencha com o Email da Empresa">
+            </div>
+        </div>
+
+        <!-- Text input (Telefone)-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="telefone"></label>
+            <div class="col-md-4">
+                <input id="telefone" name="telefone" type="tel" pattern="^\d{2}\d{4}\d{4}$" placeholder="Telefone" class="form-control input-md" required="" title="Digite seu numero de telefone (DD)XXXX-XXXX">
+            </div>
+        </div>
+
+        <!-- Password input (Senha)-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="senha"></label>
+            <div class="col-md-4">
+                <input id="senha" name="senha" type="password" placeholder="Senha" class="form-control input-md" required="" title="obrigatório">
+
+            </div>
+        </div>
+
+        <!--  Multiple Radios (Sexo)
+         <div class="form-group">
+           <label class="col-md-4 control-label" type ="radio"   ></label>
+           <div class="col-md-4">
+             <label class="radio-inline" for="radios-0">
+               <input type="radio" name="radios" id="radios-0" value="1" required="">  Masculino </label>
+                <label class="radio-inline" for="radios-1">
+               <input type="radio" name="radios" id="radios-1" value="2" required="">  Feminino  </label>
+       </div>
+   </div>-->
+
+        <!-- Text input (rg)-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="cnpj"></label>
+            <div class="col-md-4">
+                <input id="cnpj" name="cnpj" type="number" placeholder="cnpj" class="form-control input-md" required="" title="obrigatório">
+
+            </div>
+        </div>
+
+
+        <!-- Text input (num_antt)-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="razaosocial"></label>
+            <div class="col-md-4">
+                <input id="razaosocial" name="razaosocial" type="text" placeholder="Razão Social" class="form-control input-md" required="" title="obrigatório">
+
+            </div>
+        </div>
+
+        <!-- Text input (num_cnh)-->
+        <!--<div class="form-group">
+            <label class="col-md-4 control-label" for="num_cnh"></label>
+            <div class="col-md-4">
+                <input id="num_cnh" name="num_cnh" type="number" placeholder="Numero do C.N.H." class="form-control input-md" required="">
+
+            </div>
+        </div>
+
+        &lt;!&ndash; Text input (categoria_cnh)&ndash;&gt;
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="categoria_cnh"></label>
+            <div class="col-md-4">
+                <input id="categoria_cnh" name="categoria_cnh" type="text" placeholder="Categoria do C.N.H." class="form-control input-md" required="">
+
+            </div>
+        </div>
+
+        &lt;!&ndash; Botões &ndash;&gt;
+        &lt;!&ndash; Button (Double) - Botão (Cancelar) &ndash;&gt;
+        <div class="form-group">
+            <label class="col-md-4 control-label" type="botton1"></label>
+            <div class="col-md-8">
+                &lt;!&ndash;<a href="cadastroC2.html" class="btn btn-success" role="button"> Prosseguir </a>&ndash;&gt;
+                <a href="../../index.html" class="btn btn-danger" role="button"> Cancelar   </a>
+                <button class="btn btn-info" type="submit"> Enviar </button>
+            </div>
+        </div>-->
+
+        <!-- Botões -->
+        <!-- Button (Double) - Botão (Cancelar) -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" type="botton1"></label>
+            <div class="col-md-8">
+                <!--<a href="cadastroC2.html" class="btn btn-success" role="button"> Prosseguir </a>-->
+                <a href="../../index.html" class="btn btn-danger" role="button"> Cancelar   </a>
+                <button class="btn btn-info" type="submit"> Enviar </button>
+            </div>
+        </div>
+
+        <!-- Botão para Home -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" type="botton1"></label>
+            <div class="col-md-8">
+                <!--<a href="menuDeCadastros.html" class="btn btn-warning" role="button"> Voltar </a>-->
+            </div>
+            <!-- /Botões -->
+
+    </fieldset>
+</form> <!-- /Form - Fim do formulario -->
+
+<footer id="footer">
+    <div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <div class="container text-center">
+            <div class="footer-logo">
+                <a href="../../index.html"><img class="img-responsive" src="../../assets/images/logo.png" alt=""></a>
+            </div>
+            <div class="social-icons">
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p> &copy; 2018 The way. </p>
+                </div>
+                <div class="col-sm-6">
+                    <!-- <p class="pull-right"> Projetado por <a href="http://www.themeum.com/"> Themeum </a></p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

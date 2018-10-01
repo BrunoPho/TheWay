@@ -1,0 +1,18 @@
+Evitar mostrar páginas com "Aqui iria ...". Em vez disso mostrar uma página de exemplo
+
+(X) - criar uma login_transp.html 
+
+
+( ) - Perfil usuario
+( )  --- menu superior - editar - alterar senha - (no caso dos fretes - buscar )
+( )  --- mostrar dados do usuario nessa pagina
+( )  --- criar uma copia da pagina  e exibir meus fretes
+
+( ) Fazer a mesma coisa com perfil de transportadora
+( ) --- menu superior - editar - alterar senha - (no caso dos fretes - buscar )
+( )  --- mostrar dados da transportadora nessa pagina
+( )  --- criar uma copia da pagina com uma oferta de serviço
+( )  --- página onde empresa oferece frete, ou se ela busca por usuarios
+
+( ) - Relação entre usuario e transportadora
+( )  --- página onde usuario busca fretes

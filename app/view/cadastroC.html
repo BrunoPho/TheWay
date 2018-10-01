@@ -1,0 +1,157 @@
+<?php
+
+require_once "../models/conexao.php";
+
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
+   <title> Cadastre-se - Encontre a caminhoneiro mais ideal a você </title>
+
+  <!-- Importação do CSS -->
+  <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../assets/css/animate.min.css" rel="stylesheet">
+  <link href="../../assets/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../../assets/css/lightbox.css" rel="stylesheet">
+  <link href="../../assets/css/main.css" rel="stylesheet">
+  <link id="css-preset" href="../../assets/css/presets/preset1.css" rel="stylesheet">
+  <link href="../../assets/css/responsive.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../../assets/css/estilotw.css">
+  <link rel="shortcut icon" href="../../assets/images/logo.png">
+  <link href="http://cdn.phpoll.com/css/animate.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <!-- Importação do JS -->
+  <script src="https:../../ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https:../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="../../assets/js/html5shiv.js"></script>
+  <script src="../../assets/js/respond.min.js"></script>
+
+</head>
+<body>
+
+  <!-- Nome do formulario -->
+  <center><h1> Vamos começar: </h1></center>
+
+        <form class="form-horizontal" method="POST" action="../controls/ControladorCaminhoneiro.php?acao=cadastrar_caminhoneiro"><!-- Form - Inicio do formulario -->
+            <fieldset><!-- conjunto de campos -->
+
+                <!-- Text input (Nome)-->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="nome"></label>
+                  <div class="col-md-4">
+                      <input id="nome" name="nome" type="text" placeholder="Nome" class="form-control input-md" required="" title="Preencha com seu primeiro">
+                  </div>
+              </div>
+
+              <!-- Text input (Email)-->
+              <div class="form-group">
+                  <label class="col-md-4 control-label" for="email"></label>
+                  <div class="col-md-4">
+                      <input id="email" name="email" type="email" placeholder="E-mail" class="form-control input-md" required="" title="Preencha com seu G-mail ou E-mail">
+                  </div>
+              </div>
+
+              <!-- Text input (Telefone)-->
+              <div class="form-group">
+                  <label class="col-md-4 control-label" for="telefone"></label>
+                  <div class="col-md-4">
+                      <input id="telefone" name="telefone" type="tel" pattern="^\d{2}\d{4}\d{4}$" placeholder="Telefone" class="form-control input-md" required="" title="Digite seu numero de telefone (DD)XXXX-XXXX">
+                  </div>
+              </div>
+
+              <!-- Password input (Senha)-->
+              <div class="form-group">
+                  <label class="col-md-4 control-label" for="senha"></label>
+                  <div class="col-md-4">
+                    <input id="senha" name="senha" type="password" placeholder="Senha" class="form-control input-md" required="">
+
+                </div>
+            </div>
+
+           <!--  Multiple Radios (Sexo)
+            <div class="form-group">
+              <label class="col-md-4 control-label" type ="radio"   ></label>
+              <div class="col-md-4"> 
+                <label class="radio-inline" for="radios-0">
+                  <input type="radio" name="radios" id="radios-0" value="1" required="">  Masculino </label> 
+                   <label class="radio-inline" for="radios-1">
+                  <input type="radio" name="radios" id="radios-1" value="2" required="">  Feminino  </label>
+          </div>
+      </div>-->
+
+                <!-- Text input (rg)-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="rg"></label>
+                    <div class="col-md-4">
+                        <input id="rg" name="rg" type="number" placeholder="RG" class="form-control input-md" required="">
+
+                    </div>
+                </div>
+
+                <!-- Text input (cpf)-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="cpf"></label>
+                    <div class="col-md-4">
+                        <input id="cpf" name="cpf" type="number" placeholder="CPF" class="form-control input-md" required="">
+
+                    </div>
+                </div>
+
+                <!-- Text input (num_antt)-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="num_antt"></label>
+                    <div class="col-md-4">
+                        <input id="num_antt" name="num_antt" type="number" placeholder="Numero da A.N.T.T." class="form-control input-md" required="">
+
+                    </div>
+                </div>
+
+                <!-- Text input (num_cnh)-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="num_cnh"></label>
+                    <div class="col-md-4">
+                        <input id="num_cnh" name="num_cnh" type="number" placeholder="Numero do C.N.H." class="form-control input-md" required="">
+
+                    </div>
+                </div>
+
+                <!-- Text input (categoria_cnh)-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="categoria_cnh"></label>
+                    <div class="col-md-4">
+                        <input id="categoria_cnh" name="categoria_cnh" type="text" placeholder="Categoria do C.N.H." class="form-control input-md" required="">
+
+                    </div>
+                </div>
+
+<!-- Botões -->
+        <!-- Button (Double) - Botão (Cancelar) -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" type="botton1"></label>
+          <div class="col-md-8">
+            <!--<a href="cadastroC2.html" class="btn btn-success" role="button"> Prosseguir </a>-->
+            <a href="../../index.html" class="btn btn-danger" role="button"> Cancelar   </a>
+              <button class="btn btn-info" type="submit"> Enviar </button>
+          </div>
+        </div>
+
+                <!-- Botão para Home -->
+                <div class="form-group">
+            <label class="col-md-4 control-label" type="botton1"></label>
+            <div class="col-md-8">
+            <!--<a href="menuDeCadastros.html" class="btn btn-warning" role="button"> Voltar </a>-->
+          </div>
+<!-- /Botões -->
+
+  </fieldset>
+</form> <!-- /Form - Fim do formulario -->
+</body>
+</html>

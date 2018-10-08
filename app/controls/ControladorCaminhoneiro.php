@@ -19,7 +19,7 @@ if (!isset($_GET['acao'])) {
 
 function cadastrar_caminhoneiro(){
 /*    var_dump($_POST);*/
-    $caminhoneiro = new caminhoneiro ($_POST['nome'], $_POST['email'], $_POST['telefone'], $_POST['senha'], $_POST['rg'], $_POST['cpf'], $_POST['num_antt'], $_POST['num_cnh'], $_POST['categoria_cnh']);
+    $caminhoneiro = new caminhoneiro ($_POST['nome'], $_POST['email'], $_POST['telefone'], $_POST['senha'], $_POST['rg'], $_POST['cpf'], $_POST['cod_cidade'], $_POST['num_antt'], $_POST['num_cnh'], $_POST['categoria_cnh']);
     $crudc_c = new Crudcaminhoneiro();
     $crudc_c->salvar($caminhoneiro);
 
@@ -64,7 +64,7 @@ function editar_caminhoneiro($id){
 
 function editar2_caminhoneiro($caminhoneiro){
 
-    $caminhoneiro = new caminhoneiro ($_POST['nome'], $_POST['email'], $_POST['telefone'], $_POST['senha'], $_POST['rg'], $_POST['cpf'], $_POST['num_antt'], $_POST['num_cnh'], $_POST['categoria_cnh'], $_POST['cod_usuario']);
+    $caminhoneiro = new caminhoneiro ($_POST['nome'], $_POST['email'], $_POST['telefone'], $_POST['senha'], $_POST['rg'], $_POST['cpf'], $_POST['cod_cidade'], $_POST['num_antt'], $_POST['num_cnh'], $_POST['categoria_cnh'], $_POST['cod_usuario']);
     $crud = new Crudcaminhoneiro();
     $listacaminhoneiro = $crud->editar($caminhoneiro); ///////////////////////////////////////////// Esta com erro!!!
 

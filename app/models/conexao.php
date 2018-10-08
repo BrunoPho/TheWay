@@ -4,7 +4,7 @@ class Conexao {
     const HOST      = "localhost";
     const NOMEBANCO = "TheWay";
     const USUARIO   = "root";
-    const SENHA     = "root";
+    const SENHA     = "";
 
     public static $conexao = null;
     public static function getConexao(){
